@@ -2,8 +2,10 @@
 
 <div class="form-container">
 
+    <!-- reactive form -->
     <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
 
+        <!-- taking first name input from user -->
         <mat-form-field appearance="fill" class="col-md-4">
             <mat-label>First Name</mat-label>
             <input matInput type="text" id="firstname" name="firstname" formControlName="firstname" placeholder="First Name">
@@ -12,12 +14,14 @@
                     First Name is required.
             </mat-error>
         </mat-form-field>
-    
+
+        <!-- taking middle name input from user -->
         <mat-form-field appearance="fill" class="col-md-4">
             <mat-label>Middle Name</mat-label>
             <input matInput type="text" id="middlename" name="middlename" formControlName="middlename" placeholder="Middle Name">
         </mat-form-field>
 
+        <!-- taking last name input from user -->
         <mat-form-field appearance="fill" class="col-md-4">
             <mat-label>Last Name</mat-label>
             <input matInput type="text" id="lastname" name="lastname" formControlName="lastname" placeholder="Last Name">
@@ -26,6 +30,7 @@
             </mat-error>
         </mat-form-field>
 
+        <!-- taking department input from user -->
         <mat-form-field appearance="fill" class="col-md-4">
             <mat-label>Department</mat-label>
             <mat-select matNativeControl name="department" formControlName="department">
@@ -40,6 +45,7 @@
             </mat-error>
         </mat-form-field>
 
+        <!-- taking gender input from the user -->
         <mat-form-field appearance="fill" class="col-md-4">
             <mat-label>Gender</mat-label>
             <mat-select matNativeControl name="gender" formControlName="gender">
@@ -51,6 +57,7 @@
             </mat-error>
         </mat-form-field>
 
+        <!-- taking DOB input from the user -->
         <mat-form-field appearance="fill" class="col-md-4">
             <mat-label>Date of Birth</mat-label>
             <input matInput type="date" id="DOB" name="DOB" formControlName="DOB" placeholder="Date Of Birth">
@@ -59,6 +66,7 @@
             </mat-error>  
         </mat-form-field>
 
+        <!-- taking address input from the user -->
         <mat-form-field appearance="fill" class="col-md-6">
             <mat-label>Address</mat-label>
             <input matInput type="text" id="address" name="address" formControlName="address" placeholder="Address">
@@ -67,9 +75,10 @@
             </mat-error>
         </mat-form-field>
 
+        <!-- taking pincode input from the user -->
         <mat-form-field appearance="fill" class="col-md-6">
             <mat-label>Pincode</mat-label>
-            <input matInput type="number" id="pincode" name="pincode" formControlName="pincode" placeholder="Pincode">
+            <input matInput type="text" id="pincode" name="pincode" formControlName="pincode" placeholder="Pincode">
             <mat-error *ngIf="personForm.controls.pincode.invalid || personForm.controls.pincode.touched">
                 <div *ngIf="personForm.controls.pincode.errors?.['required']">
                     Pincode is required.
@@ -83,6 +92,7 @@
             </mat-error>
         </mat-form-field>
     
+        <!-- creating form -->
         <div class="sBTN">
             <button type="submit" class="btn btn-primary" [disabled]="personForm.invalid">Create</button>
         </div>

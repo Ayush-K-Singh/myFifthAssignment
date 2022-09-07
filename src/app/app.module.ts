@@ -34,7 +34,7 @@ import { EmployeeComponent } from './employee/employee.component';
     MatInputModule,
     FormsModule
   ],
-  providers: [DeactivateGuard],
+  providers: [DeactivateGuard],  // provided guard
   bootstrap: [AppComponent]
 })
 export class AppModule { }

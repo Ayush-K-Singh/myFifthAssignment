@@ -5,7 +5,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { PersonComponent } from './person/person.component';
 
 const routes: Routes = [
-  {path:'person', component:PersonComponent, canDeactivate:[DeactivateGuard]},
+  {path:'person', component:PersonComponent, canDeactivate:[DeactivateGuard]}, //applied guard
   {path:'employee', component:EmployeeComponent}
 ];
 
