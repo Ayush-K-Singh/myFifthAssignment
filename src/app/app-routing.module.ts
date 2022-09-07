@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DeactivateGuard } from './deactivate.guard';
+import { DeactivateGuard } from './guard/deactivate.guard';
 import { EmployeeComponent } from './employee/employee.component';
 import { PersonComponent } from './person/person.component';
 

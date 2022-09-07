@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
-import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-person',
@@ -19,10 +18,8 @@ export class PersonComponent implements OnInit {
     middlename: new FormControl(),
     lastname: new FormControl('', [Validators.required]),
     department: new FormControl('', [Validators.required]),
-    // contact: new FormControl('', [Validators.required,Validators.minLength(10),Validators.maxLength(10)]),
     gender: new FormControl('', [Validators.required]),
     DOB: new FormControl('', [Validators.required]),
-    // employeetype: new FormControl('', [Validators.required]),
     address: new FormControl('', [Validators.required]),
     pincode: new FormControl('', [Validators.required,Validators.minLength(6),Validators.maxLength(6)])
   })

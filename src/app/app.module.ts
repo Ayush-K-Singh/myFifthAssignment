@@ -12,7 +12,7 @@ import { MatOptionModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
-import { DeactivateGuard } from './deactivate.guard';
+import { DeactivateGuard } from './guard/deactivate.guard';
 import { EmployeeComponent } from './employee/employee.component';
 
 

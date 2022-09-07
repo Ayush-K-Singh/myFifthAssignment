@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CanDeactivate } from '@angular/router';
-import { PersonComponent } from './person/person.component';
+import { PersonComponent } from '../person/person.component';
 
 @Injectable()
 export class DeactivateGuard implements CanDeactivate<PersonComponent> {
