@@ -1,0 +1,19 @@
+.text{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sBTN{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form-container{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    width: 90%;
+    padding: 5%;
+    border-radius: 20px;
+}
+
